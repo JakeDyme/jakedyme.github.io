@@ -31,9 +31,9 @@
     <h2>Background Service :</h2>
 
     The background service will start automatically if you are recording...
-    <li>... and you navigate away from the app.
-    <li>... and the phone goes to sleep.
-    <li>... and you close the app while recording.
+    <li>... and you navigate away from the app.</li>
+    <li>... and the phone goes to sleep.</li>
+    <li>... and you close the app while recording.</li>
     <br>
     <p>On all devices the background service will start automatically, but only some devices will automatically start listening.
     On Android 10 and lower, listening will start automatically.
@@ -51,6 +51,16 @@
     <br>3. Observe that the notification starts up.
     <br>4. Tap on the notification to start listening,
     <br>or, expand the notification to see the play buttons, and then press play.
+
+    <h2>Sending Intents :</h2>
+    <p>Select the response action "Send intent to other apps". 
+      This response action allows you to trigger actions in other applications on your phone, such as "Macro Droid".
+      The Intent that is sent goes by the name: <em>"SoundTrigger.SoundDetected"</em>
+      and includes the following extra's:
+      <li>- "MaxVol": The peak amplitude of the sound detected.</li>
+      <li>- "Class": One of the ten classes that the Sound Recognition Algorithm will attempt to resolve too.</li>
+      <li>- "Confidence": The confidence of the Sound Recognition Algorithm.</li>
+    </p>
 
   </body>
 </html>
